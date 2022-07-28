@@ -28,5 +28,5 @@ h3{font-size:25px; font-weight: 600;}
 /* hide in mobile  */
 @media (max-width: 767px) {
     .company{display: none;}
-    .course_item{flex-direction: column;}
+    .course_item{flex-direction: column; padding: 15px;margin: 10px;}
 }
