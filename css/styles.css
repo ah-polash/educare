@@ -1,6 +1,32 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-
-.carousel-caption{margin-bottom: 210px;}
+.carousel-caption{margin-bottom: 150px;}
 .price_text{color: #289BDE;}
-.course_area{}
 .course_item{ max-width: 640px; padding-left: 0;}
+.overview{background-color: #F4FAFD;}
+.overview img{height: 806px;}
+.call_to_action{background-color: #289BDE; color:white;}
+.cta_btn{background-color: white; color: #289BDE;}
+.accordion_area{max-width: 872px;}
+footer{background-color: black;color:white}
+footer a {color:white;text-decoration: none;}
+footer a:hover {color:rgb(202, 191, 191)}
+.btn-primary{color: #fff; background-color: #289BDE; border-color: #289BDE;
+}
+.social_area {text-align: center;}
+.social_area a{padding:3px; background-color: #242424; color: white; margin: 16px; border-radius: 50%; width: 35px; height: 35px;}
+.social_area a:hover{ color:rgb(239, 186, 186);}
+body{font-family: 'Poppins', sans-serif;}
+.p-18{font-size:18px}
+.font-20{font-size:20px;color: #777777;}
+p{font-size:16px;}
+h1{font-size:65px; font-weight: 600;}
+h2{font-size:45px; font-weight: 600;}
+h3{font-size:25px; font-weight: 600;}
+
+/* hide in mobile  */
+@media (max-width: 767px) {
+    .company{display: none;}
+    .course_item{flex-direction: column;}
+}
