@@ -15,7 +15,7 @@
   <body>
         <header class="container">
         <!-- navbar  -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">EduCare</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,7 +99,7 @@
         </div>
         <div class="row my-4 d-flex flex-wrap justify-content-between course_area">  
             <!-- course items  -->
-            <div class="col-12 col-md-6 d-flex my-3 border rounded course_item" >
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 d-flex my-3 border rounded course_item" >
                 <img src="images/course/course-1.png" alt="">
                 <div class="p-3">
                     <h3>Fundamental Of UI/UX Design</h3>
@@ -107,7 +107,7 @@
                     <h4 class="price_text">Price : 20$</h4>
                 </div>
             </div>
-            <div class="col-12 col-md-6 d-flex my-3 border rounded course_item" >
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 d-flex my-3 border rounded course_item" >
                 <img src="images/course/course-2.png" alt="">
                 <div class="p-3">
                     <h3>Javascript Basic to advanced</h3>
@@ -115,7 +115,7 @@
                     <h4 class="price_text">Price : 20$</h4>
                 </div>
             </div>
-            <div class="col-12 col-md-6 d-flex my-3 border rounded course_item" >
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 d-flex my-3 border rounded course_item" >
                 <img src="images/course/course-3.png" alt="">
                 <div class="p-3">
                     <h3>Fullstack Web Development</h3>
@@ -123,7 +123,7 @@
                     <h4 class="price_text">Price : 20$</h4>
                 </div>
             </div>                                        
-            <div class="col-12 col-md-6 d-flex my-3 border rounded course_item" >
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 d-flex my-3 border rounded course_item" >
                 <img src="images/course/course-4.png" alt="">
                 <div class="p-3">
                     <h3>Digital Marketing</h3>
@@ -131,7 +131,7 @@
                     <h4 class="price_text">Price : 20$</h4>
                 </div>
             </div>
-            <div class="col-12 col-md-6 d-flex my-3 border rounded course_item" >
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 d-flex my-3 border rounded course_item" >
                 <img src="images/course/course-5.png" alt="">
                 <div class="p-3">
                     <h3>Photography Basic Rules</h3>
@@ -139,7 +139,7 @@
                     <h4 class="price_text">Price : 20$</h4>
                 </div>
             </div>
-            <div class="col-12 col-md-6 d-flex my-3 border rounded course_item" >
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 d-flex my-3 border rounded course_item" >
                 <img src="images/course/course-6.png" alt="">
                 <div class="p-3">
                     <h3>Motion Graphics</h3>
@@ -194,18 +194,47 @@
     <!-- Call to action  -->
     <section class="container call_to_action my-5 rounded">
         <div class="row p-5 ">
-            <div class="col-8">
+            <div class="col-12 col-md-12 col-lg-8">
                 <h2>Ready to join?</h2>
                 <p>It is a long established fact that a reader will be distracted by the <br> readable content of a page when looking at its layout.</p>
             </div>
-            <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center">
                 <div class="">
-                    <button type="button" class="btn cta_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>
+                    <!-- Button trigger modal -->
+                    <a href="#" class="btn btn-secondary btn-lg"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Register Now</a>
                 </div>
             </div>
         </div>
     </section>
-    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Registration form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group py-2">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>   
     <!-- Call to action end -->
     <!-- students gallery ara -->
     <section class="container my-5">
@@ -215,7 +244,7 @@
         <div class="row">
             
                 
-                <div class="col-12 col-md-3 col-lg-3 col-xl-3">   
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">   
                     <!-- single students  -->
                     <div class="card mb-3 col">
                         <img src="images/student/student-1.png" class="card-img-top" alt="...">
@@ -225,33 +254,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 col-lg-3 col-xl-3">   
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">   
                     <!-- single students  -->
                     <div class="card mb-3 col">
                         <img src="images/student/student-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Awlad Hossain</h5>
-                          <p class="card-text"><small class="text-muted">UIUX Designer</small></p>
+                          <h5 class="card-title">Jannatul Islam</h5>
+                          <p class="card-text"><small class="text-muted">Motion Design</small></p>
                         </div>
                     </div>
                 </div>                
-                <div class="col-12 col-md-3 col-lg-3 col-xl-3">   
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">   
                     <!-- single students  -->
                     <div class="card mb-3 col">
                         <img src="images/student/student-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Awlad Hossain</h5>
-                          <p class="card-text"><small class="text-muted">UIUX Designer</small></p>
+                          <h5 class="card-title">Imran Hossain</h5>
+                          <p class="card-text"><small class="text-muted">Graphic Designer</small></p>
                         </div>
                     </div>
                 </div>  
-                <div class="col-12 col-md-3 col-lg-3 col-xl-3">   
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">   
                     <!-- single students  -->
                     <div class="card mb-3 col">
                         <img src="images/student/student-4.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Awlad Hossain</h5>
-                          <p class="card-text"><small class="text-muted">UIUX Designer</small></p>
+                          <h5 class="card-title">Nishi Akter</h5>
+                          <p class="card-text"><small class="text-muted">Web Developer</small></p>
                         </div>
                     </div>
                 </div>           

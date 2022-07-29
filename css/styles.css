@@ -14,6 +14,8 @@ footer a {color:white;text-decoration: none;}
 footer a:hover {color:rgb(202, 191, 191)}
 .btn-primary{color: #fff; background-color: #289BDE; border-color: #289BDE;
 }
+.btn-secondary{color: #289BDE; background-color:white; border-color: white;}
+.btn-secondary:hover{background-color:rgb(230, 220, 220); color: #289BDE; }
 .social_area {text-align: center;}
 .social_area a{padding:3px; background-color: #242424; color: white; margin: 16px; border-radius: 50%; width: 35px; height: 35px;}
 .social_area a:hover{ color:rgb(239, 186, 186);}
@@ -27,6 +29,18 @@ h3{font-size:25px; font-weight: 600;}
 
 /* hide in mobile  */
 @media (max-width: 767px) {
-    .company{display: none;}
+    
     .course_item{flex-direction: column; padding: 15px;margin: 10px;}
+    
+    .call_to_action div{flex-direction: column;}
+    .call_to_action div div h2{text-align: center;}
+    .call_to_action div div p{text-align: center;}
+}
+
+ /* Medium devices (tablets, less than 992px)  */
+@media (max-width: 990px) { 
+    .company{display: none;}
+    .carousel-caption{margin-bottom: 10px;}
+    .call_to_action div div h2{text-align: center;}
+    .call_to_action div div p{text-align: center;}
 }
